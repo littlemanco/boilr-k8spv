@@ -1,9 +1,15 @@
 {
-  "TemplateName": "boilr-template",
-  "Authors": "Andrew Howden <hello[at]andrewhowden.com>",
-  "Year": "2016",
-  "GithubReference": "littlemanco/boilr-template",
-  "ProjectGoal": "",
-  "SimilarWork": "",
-  "Justification": ""
+  "Name": "mysql-data",
+  "Size": "1Gi",
+  "AccessMode": [
+    "ReadWriteOnce",
+    "ReadOnlyMany",
+    "ReadWriteMany"
+  ], 
+  "PersistentVolumeReclaimPolicy": [
+    "Retain", 
+    "Recycle"
+  ], 
+  "NfsPath": "/foo/bar/baz", 
+  "NfsServer": "192.168.2.1"
 }
